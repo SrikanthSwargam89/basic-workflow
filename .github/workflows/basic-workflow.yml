@@ -1,0 +1,26 @@
+name: basic-workflow
+on:
+  workflow_dispatch:
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first-step-first-job
+        run: echo "This is the first step from the first job"
+      - name: second-step-first-job
+        run: echo "This is the second step from the first job"
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first-step-second-job
+        run: echo "This is the first step from the second job"
+      - name: second-step-second-job
+        run: echo "This is the second step from the second job"
+  third-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first-step-third-job
+        run: echo "This is the first step from the third job"
+      - name: second-step-third-job
+        run: echo "This is the second step from the third job"
+       
